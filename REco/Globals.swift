@@ -16,4 +16,6 @@ let WIDTH : Double = Double(UIScreen.main.bounds.width)
 let HEIGHT : Double = Double(UIScreen.main.bounds.height)
 let SPACING : Double = 50.0
 let HEADERHEIGHT : CGFloat = 60.0
+//let BLUE : UIColor = UIColor(red: 16/255, green: 33/255, blue: 140/255, alpha: 1.0)
 let BLUE : UIColor = UIColor(red: 36/255, green: 49/255, blue: 85/255, alpha: 1.0)
+

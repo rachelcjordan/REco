@@ -14,7 +14,7 @@ class MapView: UIView,
                UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     let rankings = ["A", "B", "C", "D", "F"]
-    let filters = ["salad", "sandwich", "coffee", "burger", "burrito", "chinese", "farm"]
+    let filters = ["salad", "sandwich", "coffee", "farm", "burrito", "chinese", "burger"]
     let results = ["sweetgreen", "dig inn", "chipotle", "little beet", "le pain quotidien"]
     let icons = ["biodegradable", "plastic free", "no straws", "renewable", "net zero"]
     
@@ -83,7 +83,7 @@ class MapView: UIView,
         rankingHeight = 100.0
         
         filterYPos = rankingYPos! + rankingHeight! + spacing!
-        filterHeight = 200.0
+        filterHeight = 100.0
         
         resultsYPos = filterYPos! + filterHeight! + spacing!
         resultsHeight = SHEIGHT - resultsYPos! - spacing!
@@ -237,7 +237,7 @@ class MapView: UIView,
             let newY = detailCenter.y + gestureRecognizer.translation(in: self).y
             let newCenter = CGPoint(x: detailCenter.x, y: newY)
             
-            if newY < CGFloat(HEIGHT - 2*SPACING)*1.5 && newY > 100 + SHEIGHT/2 {
+            if newY < CGFloat(HEIGHT - 2*SPACING)*1.5 && newY > 0 + SHEIGHT/2 {
             
                 detailContainer!.center = newCenter
                 
